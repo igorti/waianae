@@ -29,7 +29,8 @@
 		78B077D91625F82C00A36F4C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B077D81625F82C00A36F4C /* Default-568h@2x.png */; };
 		78B077DC1625F82C00A36F4C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B077DA1625F82C00A36F4C /* MainStoryboard_iPhone.storyboard */; };
 		78B077DF1625F82C00A36F4C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B077DD1625F82C00A36F4C /* MainStoryboard_iPad.storyboard */; };
-		78B077E21625F82C00A36F4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B077E11625F82C00A36F4C /* ViewController.m */; };
+		78B077E21625F82C00A36F4C /* GridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B077E11625F82C00A36F4C /* GridViewController.m */; };
+		78B681291635DD7B00A934A3 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B681281635DD7B00A934A3 /* PhotoViewController.m */; };
 		78B9E2CA1626054600FCC72E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B9E2C91626054600FCC72E /* AssetsLibrary.framework */; };
 		78B9E2F3162627C000FCC72E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B9E2F2162627C000FCC72E /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -58,7 +59,7 @@
 		787D330B162760460092C2C7 /* PSTGridLayoutRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutRow.m; sourceTree = "<group>"; };
 		787D330C162760460092C2C7 /* PSTGridLayoutSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTGridLayoutSection.h; sourceTree = "<group>"; };
 		787D330D162760460092C2C7 /* PSTGridLayoutSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTGridLayoutSection.m; sourceTree = "<group>"; };
-		78B077BE1625F82C00A36F4C /* MyPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78B077BE1625F82C00A36F4C /* MyPhotos.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPhotos.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B077C21625F82C00A36F4C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78B077C41625F82C00A36F4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78B077C61625F82C00A36F4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -73,8 +74,10 @@
 		78B077D81625F82C00A36F4C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		78B077DB1625F82C00A36F4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		78B077DE1625F82C00A36F4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		78B077E01625F82C00A36F4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		78B077E11625F82C00A36F4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		78B077E01625F82C00A36F4C /* GridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		78B077E11625F82C00A36F4C /* GridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridViewController.m; sourceTree = "<group>"; };
+		78B681271635DD7B00A934A3 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		78B681281635DD7B00A934A3 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		78B9E2C91626054600FCC72E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		78B9E2F2162627C000FCC72E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -137,7 +140,7 @@
 		78B077BF1625F82C00A36F4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				78B077BE1625F82C00A36F4C /* MyPhotos.app */,
+				78B077BE1625F82C00A36F4C /* MyPhotos.1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,8 +165,10 @@
 				78B077D21625F82C00A36F4C /* AppDelegate.m */,
 				78B077DA1625F82C00A36F4C /* MainStoryboard_iPhone.storyboard */,
 				78B077DD1625F82C00A36F4C /* MainStoryboard_iPad.storyboard */,
-				78B077E01625F82C00A36F4C /* ViewController.h */,
-				78B077E11625F82C00A36F4C /* ViewController.m */,
+				78B077E01625F82C00A36F4C /* GridViewController.h */,
+				78B077E11625F82C00A36F4C /* GridViewController.m */,
+				78B681271635DD7B00A934A3 /* PhotoViewController.h */,
+				78B681281635DD7B00A934A3 /* PhotoViewController.m */,
 				78B077C91625F82C00A36F4C /* Supporting Files */,
 			);
 			path = MyPhotos;
@@ -200,7 +205,7 @@
 			);
 			name = MyPhotos;
 			productName = MyPhotos;
-			productReference = 78B077BE1625F82C00A36F4C /* MyPhotos.app */;
+			productReference = 78B077BE1625F82C00A36F4C /* MyPhotos.1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +257,7 @@
 			files = (
 				78B077CF1625F82C00A36F4C /* main.m in Sources */,
 				78B077D31625F82C00A36F4C /* AppDelegate.m in Sources */,
-				78B077E21625F82C00A36F4C /* ViewController.m in Sources */,
+				78B077E21625F82C00A36F4C /* GridViewController.m in Sources */,
 				787D330E162760460092C2C7 /* PSTCollectionView.m in Sources */,
 				787D330F162760460092C2C7 /* PSTCollectionViewCell.m in Sources */,
 				787D3310162760460092C2C7 /* PSTCollectionViewController.m in Sources */,
@@ -264,6 +269,7 @@
 				787D3316162760460092C2C7 /* PSTGridLayoutItem.m in Sources */,
 				787D3317162760460092C2C7 /* PSTGridLayoutRow.m in Sources */,
 				787D3318162760460092C2C7 /* PSTGridLayoutSection.m in Sources */,
+				78B681291635DD7B00A934A3 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +362,9 @@
 				GCC_PREFIX_HEADER = "MyPhotos/MyPhotos-Prefix.pch";
 				INFOPLIST_FILE = "MyPhotos/MyPhotos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME).1";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -369,8 +376,9 @@
 				GCC_PREFIX_HEADER = "MyPhotos/MyPhotos-Prefix.pch";
 				INFOPLIST_FILE = "MyPhotos/MyPhotos-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME).1";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

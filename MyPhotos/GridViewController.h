@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ViewController : PSUICollectionViewController
+@interface GridViewController : PSUICollectionViewController
 
 @end

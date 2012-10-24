@@ -10,4 +10,6 @@
 
 @interface PhotoViewController : UIViewController
 
+-(PhotoViewController*) initWithImages:(NSArray*)images andIndex:(NSInteger) index;
+
 @end
