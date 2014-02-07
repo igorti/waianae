@@ -40,7 +40,7 @@
                            usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
                                [group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
                                    if(asset){
-                                       UIImage *image = [UIImage imageWithCGImage:asset.aspectRatioThumbnail];
+                                       UIImage *image = [self resizeImage:[UIImage imageWithCGImage:asset.aspectRatioThumbnail]];
                                        [self.thumbnails addObject:image];
                                        [self.originals addObject:asset];
                                        
@@ -53,6 +53,18 @@
                          failureBlock:^(NSError *error) {
                              NSLog(@"Failed to read assets");
                          }];
+}
+
+-(UIImage*) resizeImage:(UIImage*) original
+{
+    CGSize newSize = CGSizeMake(330, 300);
+    
+    UIGraphicsBeginImageContext(newSize);
+    [original drawInRect:CGRectMake(0,0,newSize.width,newSize.height)];
+    UIImage* resized = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return resized;
 }
 
 - (ALAssetsLibrary *) defaultLibrary
@@ -81,6 +93,7 @@
     cell.backgroundColor = [UIColor whiteColor];
     
     UIImage *image = [self.thumbnails objectAtIndex:indexPath.row];
+    
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     
     [cell.contentView addSubview:imageView];
@@ -103,7 +116,7 @@
                         layout:(UICollectionViewLayout*)collectionViewLayout
         insetForSectionAtIndex:(NSInteger)section {
     
-    return UIEdgeInsetsMake(50, 20, 50, 20);
+    return UIEdgeInsetsMake(0,0,0,0);
 }
 
 @end
