@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "PSTCollectionViewFlowLayout.h"
 #import "GridViewController.h"
 
 @implementation AppDelegate
@@ -17,11 +16,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    GridViewController *grid = [[GridViewController alloc] initWithCollectionViewLayout:[PSUICollectionViewFlowLayout new]];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:grid];
-
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setItemSize:CGSizeMake(100, 100)];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    
+    GridViewController *gridView = [[GridViewController alloc] initWithCollectionViewLayout:flowLayout];
+    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:gridView];
+    
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
-    [self.window addSubview:navigationController.view];
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
     return YES;

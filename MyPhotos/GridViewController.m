@@ -11,13 +11,49 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 
 @interface GridViewController (){
-    NSMutableArray *thumbnails;
-    NSMutableArray *assets;
+    
 }
+
+@property (strong, nonatomic) NSMutableArray *thumbnails;
+@property (strong, nonatomic) NSMutableArray *originals;
 
 @end
 
 @implementation GridViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.title = @"My Photos";
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
+
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"MyCell"];
+    
+    self.thumbnails = [[NSMutableArray alloc] init];
+    self.originals = [[NSMutableArray alloc] init];
+    ALAssetsLibrary *library = [self defaultLibrary];
+    
+    
+    [library enumerateGroupsWithTypes:ALAssetsGroupAll
+                           usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+                               [group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
+                                   if(asset){
+                                       UIImage *image = [UIImage imageWithCGImage:asset.aspectRatioThumbnail];
+                                       [self.thumbnails addObject:image];
+                                       [self.originals addObject:asset];
+                                       
+                                       [self.collectionView reloadData];
+                                   }
+                               }];
+                               
+                               [self.collectionView reloadData];
+                           }
+                         failureBlock:^(NSError *error) {
+                             NSLog(@"Failed to read assets");
+                         }];
+}
 
 - (ALAssetsLibrary *) defaultLibrary
 {
@@ -29,108 +65,45 @@
     return library;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    self.title = @"My Photos";
-    
-    [self.collectionView setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
-    [self.collectionView registerClass:[PSUICollectionViewCell class] forCellWithReuseIdentifier:@"MY_CELL"];
-    
-    thumbnails = [[NSMutableArray alloc] init];
-    assets = [[NSMutableArray alloc] init];
-    ALAssetsLibrary *library = [self defaultLibrary];
-    
-    
-    [library enumerateGroupsWithTypes:ALAssetsGroupAll
-                           usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
-                               [group enumerateAssetsUsingBlock:^(ALAsset *asset, NSUInteger index, BOOL *stop) {
-                                   if(asset){
-                                       UIImage *image = [UIImage imageWithCGImage:asset.aspectRatioThumbnail];
-                                       [thumbnails addObject:image];
-                                       [assets addObject:asset];
-                                   }
-                               }];
-                               
-                               [self.collectionView reloadData];
-                           }
-                         failureBlock:^(NSError *error) {
-                             NSLog(@"Failed to read assets");
-                         }];
+#pragma mark - UICollectionView Datasource
+- (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
+    return self.thumbnails.count;
 }
 
-- (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section;
-{
-    return thumbnails.count;
+- (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView {
+    return 1;
 }
 
-- (PSUICollectionViewCell *)collectionView:(PSUICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
-{
-    PSUICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"MY_CELL" forIndexPath:indexPath];
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
+                  cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    if(cell.contentView.subviews.count > 0){
-        [cell.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    }
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MyCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
     
-    UIImage *image = [thumbnails objectAtIndex:indexPath.row];
+    UIImage *image = [self.thumbnails objectAtIndex:indexPath.row];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-    imageView.layer.borderWidth = 3.0;
-    imageView.layer.borderColor = [UIColor whiteColor].CGColor;
-    imageView.layer.shadowColor = [UIColor blackColor].CGColor;
-    imageView.layer.shadowOpacity = 1.0f;
-    imageView.layer.shadowOffset = CGSizeMake(0, 0.5f);
-    
-    UIBezierPath *path = [UIBezierPath bezierPathWithRect:imageView.bounds];
-    imageView.layer.shadowPath = path.CGPath;
     
     [cell.contentView addSubview:imageView];
     
     return cell;
 }
 
-- (void)collectionView:(PSUICollectionView *)collectionView
-didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    PhotoViewController *photoViewController = [[PhotoViewController alloc] initWithImages:assets andIndex:indexPath.row];
-    
-    [self.navigationController pushViewController:photoViewController animated:YES];
-}
 
-- (UIEdgeInsets)collectionView:(PSUICollectionView *)collectionView
-                   layout:(PSUICollectionViewLayout*)collectionViewLayout
-   insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(20, 20, 20, 20);
-}
-
-- (CGSize)collectionView:(PSUICollectionView *)collectionView
-                  layout:(PSUICollectionViewLayout*)collectionViewLayout
+#pragma mark – UICollectionViewDelegateFlowLayout
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UIImage *img = [thumbnails objectAtIndex:indexPath.row];
-    return CGSizeMake(img.size.width, img.size.height);
-}
-
-- (CGFloat)collectionView:(PSUICollectionView *)collectionView
-                   layout:(PSUICollectionViewLayout*)collectionViewLayout
-minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return 5;
-}
-
-- (CGFloat)collectionView:(PSUICollectionView *)collectionView
-                   layout:(PSUICollectionViewLayout*)collectionViewLayout
-minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return 20;
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     
-    return interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+    UIImage *image = [self.thumbnails objectAtIndex:indexPath.row];
+    
+    return CGSizeMake(image.size.width, image.size.height);
 }
 
--(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
-                               duration:(NSTimeInterval)duration{
-    [self.collectionView reloadData];
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
+                        layout:(UICollectionViewLayout*)collectionViewLayout
+        insetForSectionAtIndex:(NSInteger)section {
+    
+    return UIEdgeInsetsMake(50, 20, 50, 20);
 }
-
 
 @end

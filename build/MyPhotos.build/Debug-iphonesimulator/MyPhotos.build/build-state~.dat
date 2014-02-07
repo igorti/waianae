@@ -1,0 +1,191 @@
+TMyPhotos
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/Info.plist /Users/igor/Projects/waianae/MyPhotos/MyPhotos-Info.plist
+cProcessPCH /var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.pch MyPhotos/MyPhotos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c000000005283375600000000000003B5
+t1384331094
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005283375C00000000000001A0
+t1384331100
+s416
+
+N/Users/igor/Projects/waianae/MyPhotos/MyPhotos-Info.plist
+c0000000052F4E4C30000000000000646
+t1391781059
+s1606
+
+N/Users/igor/Projects/waianae/MyPhotos/MyPhotos-Prefix.pch
+c0000000052F4E4C30000000000000161
+t1391781059
+s353
+
+N/Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/Info.plist
+t2
+s0
+
+N/Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/PkgInfo
+t2
+s0
+
+N/var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.pch
+t2
+s0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/AppDelegate.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/GridViewController.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionView.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewCell.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewController.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewData.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewFlowLayout.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewItemKey.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewLayout.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutInfo.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutItem.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutRow.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutSection.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/PhotoViewController.m
+r0
+
+CBuild AST from /Users/igor/Projects/waianae/MyPhotos/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies36b0e5bb25a5b841^b552ecbb25a5b841^---0#1#1#--18"Check dependencies36"AC0F1578-8889-44F8-83A9-01F9E47BBAB1-
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/AppDelegate.o /Users/igor/Projects/waianae/MyPhotos/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/GridViewController.o /Users/igor/Projects/waianae/MyPhotos/GridViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTCollectionView.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTCollectionViewCell.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTCollectionViewController.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTCollectionViewData.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewData.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTCollectionViewFlowLayout.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewFlowLayout.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTCollectionViewItemKey.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewItemKey.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTCollectionViewLayout.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTCollectionViewLayout.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTGridLayoutInfo.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTGridLayoutItem.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTGridLayoutRow.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutRow.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PSTGridLayoutSection.o /Users/igor/Projects/waianae/MyPhotos/PSTCollectionView/PSTGridLayoutSection.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/PhotoViewController.o /Users/igor/Projects/waianae/MyPhotos/PhotoViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/Objects-normal/i386/main.o /Users/igor/Projects/waianae/MyPhotos/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileStoryboard /Users/igor/Projects/waianae/MyPhotos/en.lproj/MainStoryboard_iPad.storyboard
+r0
+
+CCompileStoryboard /Users/igor/Projects/waianae/MyPhotos/en.lproj/MainStoryboard_iPhone.storyboard
+r0
+
+CCopyStringsFile /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/en.lproj/InfoPlist.strings MyPhotos/en.lproj/InfoPlist.strings
+r0
+
+CCpResource MyPhotos/Default-568h@2x.png build/Debug-iphonesimulator/MyPhotos.1.app/Default-568h@2x.png
+r0
+
+CCpResource MyPhotos/Default.png build/Debug-iphonesimulator/MyPhotos.1.app/Default.png
+r0
+
+CCpResource MyPhotos/Default@2x.png build/Debug-iphonesimulator/MyPhotos.1.app/Default@2x.png
+r0
+
+CGenerateDSYMFile /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app.dSYM /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/MyPhotos.1
+r0
+
+CLd /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/MyPhotos.1 normal i386
+r0
+
+CProcessInfoPlistFile /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/Info.plist /Users/igor/Projects/waianae/MyPhotos/MyPhotos-Info.plist
+s413476283.926367
+e413476283.928462
+r1
+xProcessInfoPlistFile
+x/Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/Info.plist
+x/Users/igor/Projects/waianae/MyPhotos/MyPhotos-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Process /Users/igor/Projects/waianae/MyPhotos/MyPhotos-Info.plist103"ProcessInfoPlistFile build/Debug-iphonesimulator/MyPhotos.1.app/Info.plist MyPhotos/MyPhotos-Info.plist9d47edbb25a5b841^ab3feebb25a5b841^---0#0#1#-19%DVTDocumentLocation2@64"file:///Users/igor/Projects/waianae/MyPhotos/MyPhotos-Info.plist0000000000000000^662"ProcessInfoPlistFile build/Debug-iphonesimulator/MyPhotos.1.app/Info.plist MyPhotos/MyPhotos-Info.plist    cd /Users/igor/Projects/waianae    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/igor/Projects/waianae/MyPhotos/MyPhotos-Info.plist -genpkginfo /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app/Info.plist36"6ABC6386-6495-41A3-A098-CD9DB3068AD6-
+bAE3C9CB8-5F68-4CF0-990C-DA03CAC496A3
+
+CProcessPCH /Users/igor/Library/Developer/Xcode/DerivedData/MyPhotos-hevlfgxlmetdbabzamjhrgcmhjdh/Index/PrecompiledHeaders/MyPhotos-Prefix-eozinpmwvpcppzahyhfdsilzvytj_ast/MyPhotos-Prefix.pch.pch MyPhotos/MyPhotos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.pch MyPhotos/MyPhotos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s413476283.929506
+e413476284.230634
+r0
+xProcessPCH
+x/var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.pch
+xMyPhotos/MyPhotos-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/igor/Projects/waianae/MyPhotos/MyPhotos-Prefix.pch:14:13: fatal error: 'PSTCollectionView.h' file not found
+o    #import "PSTCollectionView.h"
+o            ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile MyPhotos/MyPhotos-Prefix.pch294"ProcessPCH /var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.pch MyPhotos/MyPhotos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7022eebb25a5b841^810a3bbc25a5b841^-182"/Users/igor/Projects/waianae/MyPhotos/MyPhotos-Prefix.pch:14:13: fatal error: 'PSTCollectionView.h' file not found    #import "PSTCollectionView.h"            ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@36"'PSTCollectionView.h' file not found-413476284#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@64"file:///Users/igor/Projects/waianae/MyPhotos/MyPhotos-Prefix.pch0000000000000000^13#12#13#12#324#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@64"file:///Users/igor/Projects/waianae/MyPhotos/MyPhotos-Prefix.pch0000000000000000^3396"ProcessPCH /var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.pch MyPhotos/MyPhotos-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/igor/Projects/waianae    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.1 -iquote /Users/igor/Projects/waianae/build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/MyPhotos.1-generated-files.hmap -I/Users/igor/Projects/waianae/build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/MyPhotos.1-own-target-headers.hmap -I/Users/igor/Projects/waianae/build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/MyPhotos.1-all-target-headers.hmap -iquote /Users/igor/Projects/waianae/build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/MyPhotos.1-project-headers.hmap -I/Users/igor/Projects/waianae/build/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/igor/Projects/waianae/build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/DerivedSources/i386 -I/Users/igor/Projects/waianae/build/MyPhotos.build/Debug-iphonesimulator/MyPhotos.build/DerivedSources -F/Users/igor/Projects/waianae/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.d -c /Users/igor/Projects/waianae/MyPhotos/MyPhotos-Prefix.pch -o /var/folders/n6/rdhdzmz90xg4581k0j2frbtr0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/MyPhotos-Prefix-avhjdloemjnksnciqvfvrzrxnoau/MyPhotos-Prefix.pch.pch36"1281F048-CA1C-4E3B-8E29-018A82FB3F2B-
+bAE3C9CB8-5F68-4CF0-990C-DA03CAC496A3
+
+CTouch /Users/igor/Projects/waianae/build/Debug-iphonesimulator/MyPhotos.1.app
+r0
+

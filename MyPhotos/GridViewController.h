@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface GridViewController : PSUICollectionViewController
+@interface GridViewController : UICollectionViewController<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @end

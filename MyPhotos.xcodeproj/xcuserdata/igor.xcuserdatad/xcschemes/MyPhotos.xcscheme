@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "78B077BD1625F82C00A36F4C"
-               BuildableName = "MyPhotos.app"
+               BuildableName = "MyPhotos.1.app"
                BlueprintName = "MyPhotos"
                ReferencedContainer = "container:MyPhotos.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78B077BD1625F82C00A36F4C"
-            BuildableName = "MyPhotos.app"
+            BuildableName = "MyPhotos.1.app"
             BlueprintName = "MyPhotos"
             ReferencedContainer = "container:MyPhotos.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78B077BD1625F82C00A36F4C"
-            BuildableName = "MyPhotos.app"
+            BuildableName = "MyPhotos.1.app"
             BlueprintName = "MyPhotos"
             ReferencedContainer = "container:MyPhotos.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "78B077BD1625F82C00A36F4C"
-            BuildableName = "MyPhotos.app"
+            BuildableName = "MyPhotos.1.app"
             BlueprintName = "MyPhotos"
             ReferencedContainer = "container:MyPhotos.xcodeproj">
          </BuildableReference>
